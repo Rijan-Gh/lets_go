@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
 
         },
-        sarah: {
-            name: "Sarah Chen",
-            role: "Senior Frontend Architect",
-            bio: "Sarah focuses on creating responsive, accessible user interfaces with modern JavaScript frameworks. She has a keen eye for design and user experience.",
-            details: "With 9 years of frontend development experience, Sarah has built design systems used by teams of 50+ developers. She's an advocate for web accessibility and performance optimization.",
-            skills: ["Vue.js", "React", "CSS/SCSS", "Webpack", "Jest", "Accessibility", "UI/UX"],
-            experience: "9+ years",
+        Abishek: {
+            name: "Abishek Bhatt",
+            role: "Senior Video Graphy",
+            bio: "Abishek focuses on creating content (like youtube , facebook ,tiktok and instagram) ,.",
+            details: "With 5 years of experience in video editing and content creation, Abishek has produced engaging content for various platforms. He specializes in thumbnail creation and speaking.",
+            skills: ["Video editing", "Thumbnail creation", "Speaking", "Content creation", "Social media management"],
+            experience: "2+ years",
             education: "B.S. Interaction Design, Carnegie Mellon",
             achievements: [
                 "Designed a component library used by 100,000+ daily active users",
