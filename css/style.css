@@ -222,7 +222,7 @@ header .container {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 3.5rem;
     list-style: none;
 }
 
@@ -278,7 +278,7 @@ header .container {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .language-select {

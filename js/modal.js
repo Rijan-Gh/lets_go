@@ -16,14 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
             role: "Lead Full-Stack Developer",
             bio: "Saroj leads our full-stack development initiatives with 3+ years of experience building modern web applications. He specializes in AI, ML, and scalable cloud-native architectures.",
             details: "Saroj has extensive experience with Python, FastAPI, and AWS. He is passionate about building intelligent systems and optimizing backend performance.",
-            skills: ["Python", "FastAPI", "AI/ML", "AWS", "PostgreSQL", "Docker", "Kubernetes"],
+            skills: ["C", "C++", "DSA", "Python", "FastAPI", "AI/ML", "AWS", "PostgreSQL", "Docker", "Kubernetes"],
             experience: "3+ years",
-            education: "Computer Science",
+            education: "Computer Engineering from Tribhuvan University(TU) ,collage advance collage of engineering",
             achievements: [
                 "Developed scalable backend for AI-driven platforms",
                 "Implemented complex cloud architectures on AWS and Render",
                 "Specialized in PostgreSQL database optimization"
+            ],
+            projects: [
+                "https://school-management-system-o42d.onrender.com",
+                "https://abroadkhabar.com/"
             ]
+
         },
         sarah: {
             name: "Sarah Chen",
@@ -65,6 +70,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Maintained 100% on-time project delivery for 3 consecutive years",
                 "Increased client satisfaction scores from 85% to 98%",
                 "Reduced project overhead costs by 25%"
+            ]
+        },
+        jane: {
+            name: "Jane Doe",
+            role: "HR Manager",
+            bio: "Jane fosters a culture of innovation and excellence. She is dedicated to finding the best talent and ensuring a supportive work environment.",
+            details: "With over 8 years in human resources, Jane has implemented several wellness and productivity programs that have significantly improved employee retention and satisfaction.",
+            skills: ["Recruitment", "Employee Relations", "Talent Management", "Conflict Resolution", "HR Compliance"],
+            experience: "8+ years",
+            education: "B.A. Human Resources, Stanford",
+            achievements: [
+                "Reduced employee turnover rate by 15%",
+                "Streamlined recruitment process, reducing time-to-hire by 20%",
+                "Implemented a comprehensive mental health wellness program"
             ]
         }
     };

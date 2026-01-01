@@ -16,6 +16,7 @@
   "team.hero.subtitle": "The experienced developers and strategists behind our success",
   "contact.hero.title": "Get in Touch",
   "contact.hero.subtitle": "Ready to start your next project? Let's create something amazing together.",
+  "contact.hero.subtitle": "Ready to start your next project? Let's create something amazing together.",
   "contact.form.title": "Send Us a Message",
   "contact.form.submit": "Send Message",
   "footer.links.home": "Home",
@@ -30,5 +31,7 @@
   "service.uiux.desc": "User-centered design that combines aesthetics with functionality to create intuitive digital experiences.",
   "service.devops.title": "DevOps & Cloud",
   "service.devops.desc": "Scalable infrastructure, CI/CD pipelines, and cloud optimization for high-performance applications.",
-  "service.learn_more": "Learn More About Us"
+  "service.learn_more": "Learn More About Us",
+  "about.leadership.title": "Our Leadership",
+  "about.leadership.subtitle": "The experienced minds driving our vision forward"
 }

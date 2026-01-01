@@ -153,6 +153,90 @@
         </div>
     </section>
 
+    <!-- Leadership Section -->
+    <section id="leadership" style="background: rgba(99, 102, 241, 0.03); padding: 6rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n-key="about.leadership.title">Our Leaders</h2>
+                <p data-i18n-key="about.leadership.subtitle">The experienced minds driving our vision forward</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Founder -->
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <!-- <img src="media/saroj_ssd.jpeg" alt="Saroj Singh Dhami"> -->
+                        <img src="media/saroj_ssd.jpeg" alt="Saroj Singh Dhami"
+                            style="border-radius:50%;width:300px;height:250px;object-fit:cover;border:3px solid #fbfcf8;box-shadow:0 0 10px rgba(187, 38, 38, 0.1);cursor:pointer;transition:all 0.3s ease;"
+                            onmouseover="this.style.transform='scale(1.08)';this.style.boxShadow='0 0 20px rgba(99,102,241,0.3)'"
+                            onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 0 10px rgba(0,0,0,0.1)'">
+                    </div>
+                    <div class="member-info">
+                        <h3>Saroj Singh Dhami</h3>
+                        <span class="member-role">Founder & Lead Architect</span>
+                        <p>A visionary leader with deep expertise in AI, ML, and scalable cloud architectures.</p>
+                        <button class="view-details" data-member="saroj" style="color: #16dc0c;">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Team Leader -->
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80"
+                            alt="Sarah Chen">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah Chen</h3>
+                        <span class="member-role">Senior Frontend Architect</span>
+                        <p>Leading our frontend initiatives with a focus on UI/UX excellence and performance.</p>
+                        <button class="view-details" data-member="sarah">View Details</button>
+                    </div>
+                </div>
+
+                <!-- HR Manager -->
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=776&q=80"
+                            alt="Jane Doe">
+                    </div>
+                    <div class="member-info">
+                        <h3>Jane Doe</h3>
+                        <span class="member-role">HR Manager</span>
+                        <p>Fostering a culture of innovation and excellence within our growing team.</p>
+                        <button class="view-details" data-member="jane">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Operations Manager -->
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1167&q=80"
+                            alt="Jessica Williams">
+                    </div>
+                    <div class="member-info">
+                        <h3>Jessica Williams</h3>
+                        <span class="member-role">Operations Manager</span>
+                        <p>Ensuring operational efficiency and excellence across all our project deliveries.</p>
+                        <button class="view-details" data-member="jessica">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Member Modals -->
+    <div class="modal" id="memberModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalName">Team Member</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
     <!-- CTA Section -->
     <section class="cta-section" style="background: rgba(99, 102, 241, 0.05);">
         <div class="container">
@@ -194,6 +278,7 @@
     <script src="js/main.js"></script>
     <script src="js/i18n/i18n.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
