@@ -1,27 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevSphere | Senior Web Developers</title>
+    <title>TARAISHA TECH</title>
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="shortcut icon" href="./media/company logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header & Navigation -->
-    <header id="header">
-        <div class="container">
-            <nav>
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-text-container">
+            <h1 class="loader-text line1">WELCOME TO TARAISHA TECH</h1>
+            <h1 class="loader-text line2">HERE WE</h1>
+            <h1 class="loader-text line3">DESIGN.CODE.DELIVER</h1>
+        </div>
+    </div>
+    
+    <!-- MAIN CONTENT -->
+    <div class="mainContent">
+        <!-- Header & Navigation -->
+        <header id="header">
+            <div class="header-background"></div>
+            <nav class="container">
+                <!-- Left: Logo -->
                 <a href="index.html" class="logo">
-                    <i class="fas fa-code"></i> lets_go
+                    <div class="logoImg">
+                        <img src="./media/logoFinal.png" alt="LOGO">
+                    </div>
+                    <div class="logoText">
+                        <h2>TARAISHA TECH</h2>
+                        <p>DESIGN CODE DELIVERS</p>
+                    </div>
                 </a>
 
+                <!-- Center: Desktop Navigation Links (Hidden on Mobile) -->
                 <ul class="nav-links">
                     <li><a href="index.html" class="active" data-i18n-key="nav.home">Home</a></li>
                     <li><a href="about.html" data-i18n-key="nav.about">About</a></li>
@@ -29,6 +55,7 @@
                     <li><a href="contact.html" data-i18n-key="nav.contact">Contact</a></li>
                 </ul>
 
+                <!-- Right: Actions (Always Visible) -->
                 <div class="nav-actions">
                     <select id="languageSelect" class="language-select">
                         <option value="en">EN</option>
@@ -36,131 +63,139 @@
                         <option value="hi">हिन्दी</option>
                     </select>
                     <button class="theme-toggle" id="themeToggle">
-                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i> <!-- Sun icon for dark theme default -->
                     </button>
+                    <!-- Mobile Menu Toggle Button -->
                     <button class="mobile-menu-btn" id="mobileMenuBtn">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
             </nav>
 
-            <!-- Mobile Navigation -->
+            <!-- Mobile Navigation Menu (Hidden by Default, Shows on Menu Button Click) -->
             <div class="mobile-nav" id="mobileNav">
-                <a href="index.html" class="active" data-i18n-key="nav.home">Home</a>
-                <a href="about.html" data-i18n-key="nav.about">About</a>
-                <a href="team.html" data-i18n-key="nav.team">Team</a>
-                <a href="contact.html" data-i18n-key="nav.contact">Contact</a>
+                <div class="mobile-nav-header">
+                    <h3>Menu</h3>
+                    <button class="mobile-close-btn" id="mobileCloseBtn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mobile-nav-links">
+                    <a href="index.html" class="active" data-i18n-key="nav.home">Home</a>
+                    <a href="about.html" data-i18n-key="nav.about">About</a>
+                    <a href="team.html" data-i18n-key="nav.team">Team</a>
+                    <a href="contact.html" data-i18n-key="nav.contact">Contact</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <canvas id="particles-canvas"></canvas>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <canvas id="particles-canvas"></canvas>
 
-        <!-- Ambient Background Glow -->
-        <!-- <div class="ambient-glow"
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: 1;">
-            <div
-                style="position: absolute; top: -10%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, var(--color-primary-dark) 0%, transparent 70%); opacity: 0.2; filter: blur(80px);">
+            <!-- Ambient Background Glow -->
+            <div class="ambient-glow"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: 1;">
+                <div
+                    style="position: absolute; top: -10%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, var(--color-primary-dark) 0%, transparent 70%); opacity: 0.2; filter: blur(80px);">
+                </div>
+                <div
+                    style="position: absolute; bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: radial-gradient(circle, var(--color-secondary) 0%, transparent 70%); opacity: 0.15; filter: blur(100px);">
+                </div>
             </div>
-            <div
-                style="position: absolute; bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: radial-gradient(circle, var(--color-secondary) 0%, transparent 70%); opacity: 0.15; filter: blur(100px);">
+
+            <div class="container hero-container">
+                <div class="hero-content fade-in" data-tilt>
+                    <h1 data-i18n-key="hero.title">Senior Web Development Experts</h1>
+                    <p data-i18n-key="hero.subtitle">We build exceptional digital experiences that drive results. With over 10 years of expertise in
+                        modern web technologies, we transform complex problems into elegant, performant solutions.</p>
+
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary" data-i18n-key="cta.start">
+                            <i class="fas fa-paper-plane"></i> Start a Project
+                        </a>
+                        <a href="team.html" class="btn btn-secondary" data-i18n-key="cta.team">
+                            <i class="fas fa-users"></i> Meet Our Team
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div> -->
 
-        <div class="container" style="position: relative; z-index: 2;">
-            <div class="hero-content fade-in" data-tilt>
-                <h1 data-i18n-key="hero.title">Senior Web Development Experts</h1>
-                <p data-i18n-key="hero.subtitle">We build exceptional digital experiences that drive results. With over 10 years of expertise in
-                    modern web technologies, we transform complex problems into elegant, performant solutions.</p>
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
 
-                <div class="cta-buttons" style="margin-top: 2rem;">
-                    <a href="contact.html" class="btn btn-primary" data-i18n-key="cta.start">
-                        <i class="fas fa-paper-plane"></i> Start a Project
+        <!-- Services Preview -->
+        <section id="services-preview">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-i18n-key="expertise.title">Our Expertise</h2>
+                    <p data-i18n-key="expertise.subtitle">Cutting-edge solutions for modern web challenges</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card slide-in-left">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 data-i18n-key="service.fullstack.title">Full-Stack Development</h3>
+                        <p data-i18n-key="service.fullstack.desc">End-to-end web application development using modern
+                            JavaScript frameworks and cloud-native
+                            architectures.</p>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 data-i18n-key="service.uiux.title">UI/UX Design</h3>
+                        <p data-i18n-key="service.uiux.desc">User-centered design that combines aesthetics with
+                            functionality to create intuitive digital
+                            experiences.</p>
+                    </div>
+
+                    <div class="service-card slide-in-right">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 data-i18n-key="service.devops.title">DevOps & Cloud</h3>
+                        <p data-i18n-key="service.devops.desc">Scalable infrastructure, CI/CD pipelines, and cloud
+                            optimization for high-performance
+                            applications.</p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="about.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> <span data-i18n-key="service.learn_more">Learn More About
+                            Us</span>
                     </a>
-                    <a href="team.html" class="btn btn-secondary" data-i18n-key="cta.team">
-                        <i class="fas fa-users"></i> Meet Our Team
-                    </a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator"
-            style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; opacity: 0.7; animation: bounce 2s infinite;">
-            <i class="fas fa-chevron-down" style="color: var(--text-main);"></i>
-        </div>
-    </section>
-
-    <!-- Services Preview -->
-    <section id="services-preview">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-i18n-key="expertise.title">Our Expertise</h2>
-                <p data-i18n-key="expertise.subtitle">Cutting-edge solutions for modern web challenges</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card slide-in-left">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i> DevSphere
                     </div>
-                    <h3 data-i18n-key="service.fullstack.title">Full-Stack Development</h3>
-                    <p data-i18n-key="service.fullstack.desc">End-to-end web application development using modern
-                        JavaScript frameworks and cloud-native
-                        architectures.</p>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                    <div class="footer-links">
+                        <a href="index.html" data-i18n-key="footer.links.home">Home</a>
+                        <a href="about.html" data-i18n-key="footer.links.about">About</a>
+                        <a href="team.html" data-i18n-key="footer.links.team">Team</a>
+                        <a href="contact.html" data-i18n-key="footer.links.contact">Contact</a>
                     </div>
-                    <h3 data-i18n-key="service.uiux.title">UI/UX Design</h3>
-                    <p data-i18n-key="service.uiux.desc">User-centered design that combines aesthetics with
-                        functionality to create intuitive digital
-                        experiences.</p>
-                </div>
-
-                <div class="service-card slide-in-right">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
+                    <div class="copyright">
+                        <span data-i18n-key="footer.copy">&copy; 2026 DevSphere. All rights reserved.</span>
                     </div>
-                    <h3 data-i18n-key="service.devops.title">DevOps & Cloud</h3>
-                    <p data-i18n-key="service.devops.desc">Scalable infrastructure, CI/CD pipelines, and cloud
-                        optimization for high-performance
-                        applications.</p>
                 </div>
             </div>
-
-            <div class="text-center" style="margin-top: 3rem;">
-                <a href="about.html" class="btn btn-primary">
-                    <i class="fas fa-arrow-right"></i> <span data-i18n-key="service.learn_more">Learn More About
-                        Us</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-code"></i> DevSphere
-                </div>
-                <div class="footer-links">
-                    <a href="index.html" data-i18n-key="footer.links.home">Home</a>
-                    <a href="about.html" data-i18n-key="footer.links.about">About</a>
-                    <a href="team.html" data-i18n-key="footer.links.team">Team</a>
-                    <a href="contact.html" data-i18n-key="footer.links.contact">Contact</a>
-                </div>
-                <div class="copyright">
-                    <span data-i18n-key="footer.copy">&copy; 2026 DevSphere. All rights reserved.</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <!-- External Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
@@ -172,6 +207,8 @@
     <script src="js/i18n/i18n.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/animations.js"></script>
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>
