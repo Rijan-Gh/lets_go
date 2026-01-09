@@ -20,7 +20,7 @@
 
     /* Text */
     --text-main: #ffffff;
-    --text-muted: #9ca3af;
+    --text-muted: #9a9b9c;
     --text-dim: #6b7280;
 
     /* Borders & Effects */
@@ -38,6 +38,8 @@
     /* Transitions */
     --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
     --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    --bg-team: rgba(28, 28, 28, 0.1);
 }
 
 [data-theme="light"] {
@@ -47,11 +49,13 @@
     --bg-glass: rgba(255, 255, 255, 0.8);
 
     --text-main: #0f172a;
-    --text-muted: #475569;
+    --text-muted: #5a5d60;
     --text-dim: #94a3b8;
 
     --border-glass: 1px solid rgba(0, 0, 0, 0.05);
     --border-glass-hover: 1px solid rgba(0, 0, 0, 0.1);
+
+    --bg-team: linear-gradient(##C9D6FF, #E2E2E2);
 }
 
 /* Reset & Base */
